@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Coordinated Visualization</title>
+        
+        <!--main stylesheet-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    
+    <body>        
+        
+        <div id="content">
+            <h1>California Retail Gasoline Fuel Sales, 2010-2018</h1>
+            <p>In transportation, there's a lot of debate over how to best calculate Vehicle Miles Traveled. SB 743 was passed in California in 2013, replacing the transportation impact metrics from Level of Service (LOS) to Vehicle Miles Traveled (VMT). In other words, the focus for transportation projects has changed from measuring impacts to drivers to measuring the impact of driving. One of the methods used to calculate VMT in a county is using gasoline fuel sales. By looking at reported gas sale data, we can get an idea of which counties likely have the highest VMT. </p>
+            <div class="slider"></div>
+
+            <h5>Source: California Retail Fuel Outlet Annual Reporting (CEC-A15) Results.</h5>
+        </div>
+        <div class="row">
+            <div class="container" id="divDropdown">Select a year: </div>
+        </div>
+        <div class="row">
+            <div class="container" id="divMap"></div>
+            <div class="container" id="divChart"></div>
+        </div>
+        <div class="row">
+            <div class="container" id="divLegend">Legend<br></div>
+        </div>
+        <!--libraries-->
+        <!-- <script src="lib/d3.v3.js"></script> -->
+        <script src="lib/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
+        <script src="lib/topojson.js"></script>
+        <script src="lib/queue.js"></script>
+        <script src="lib/simple-statistics.js"></script>
+
+    	<!--link to main javascript file-->
+		<script src="js/main2.js"></script>
+    </body>
+</html>
